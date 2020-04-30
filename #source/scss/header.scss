@@ -1,0 +1,27 @@
+.header {
+  @include flexBox;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+  &__logo {
+    &:before {
+      content: "cloudbudget";
+      font-weight: bold;
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+  }
+  &__nav {
+
+  }
+  &__link {
+    margin-right: 35px;
+    &:last-child {
+      margin: 0;
+    }
+  }
+  .cta {
+    width: 100px;
+    height: 40px;
+  }
+}

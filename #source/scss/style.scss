@@ -1,0 +1,85 @@
+// NULLING
+@import "null.scss";
+// MIXINS
+@import "mixins.scss";
+
+$fontfamily: 'Lato';
+$orange: #EE3D1B;
+$purple: #D52047;
+
+body {
+  font-family: $fontfamily;
+}
+
+.container {
+  max-width: 1115px;
+  margin: 0 auto;
+}
+
+.row {
+  @include flexBox;
+  &_col {
+    width: 50%;
+  }
+}
+
+.cta  {
+   @include flexBox;
+   justify-content: center;
+   align-items:center;
+   border-radius: 6px;
+   &__white_border {
+     border: 1px solid #fff;
+     color: #fff;
+   }
+   &__white {
+     background: #fff;
+     color: #ED4C5C;
+   }
+}
+
+/*=========Header==============*/
+
+.mainscreen {
+  position: relative;
+  background: url("../images/header/bg.png");
+  background-size: cover;
+
+  .offer {
+    @include flexBox;
+    justify-content: center;
+    flex-direction: column;
+    color: #fff;
+    &__title {
+      font-size: 72px;
+      font-weight: bold;
+    }
+    &__text {
+
+    }
+    .cta {
+      width: 160px;
+      height: 50px;
+    }
+  }
+  // &:before {
+  //   position: absolute;
+  //   content: '';
+  //   display: block;
+  //   height: 100%;
+  //   width: 100%;
+  //   opacity: 0.3;
+  //   z-index: 0;
+  //   background: linear-gradient(90deg, rgba(213, 32, 71, 0.8) 0%, rgba(238, 61, 27, 0.8) 100%);
+  // }
+}
+
+@import "header.scss";
+
+
+/*=========Main styles=========*/
+
+//Styles
+
+/*=========Footer==============*/
+@import "footer.scss";

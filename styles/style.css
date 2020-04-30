@@ -1,0 +1,140 @@
+*, *:before, *:after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: none;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+body {
+  font-family: "Lato";
+}
+
+.container {
+  max-width: 1115px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  display: -ms-flexbox;
+}
+.row_col {
+  width: 50%;
+}
+
+.cta {
+  display: flex;
+  display: -ms-flexbox;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+.cta__white_border {
+  border: 1px solid #fff;
+  color: #fff;
+}
+.cta__white {
+  background: #fff;
+  color: #ED4C5C;
+}
+
+/*=========Header==============*/
+.mainscreen {
+  position: relative;
+  background: url("../images/header/bg.png");
+  background-size: cover;
+}
+.mainscreen .offer {
+  display: flex;
+  display: -ms-flexbox;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+.mainscreen .offer__title {
+  font-size: 72px;
+  font-weight: bold;
+}
+.mainscreen .offer .cta {
+  width: 160px;
+  height: 50px;
+}
+
+.header {
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #fff;
+}
+.header__logo:before {
+  content: "cloudbudget";
+  font-weight: bold;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.header__link {
+  margin-right: 35px;
+}
+.header__link:last-child {
+  margin: 0;
+}
+.header .cta {
+  width: 100px;
+  height: 40px;
+}
+
+/*=========Main styles=========*/
+/*=========Footer==============*/
+.footer {
+  padding: 68px 0 66px;
+}
+.footer .container {
+  display: flex;
+  display: -ms-flexbox;
+}
+.footer_col {
+  display: flex;
+  display: -ms-flexbox;
+}
+.footer__socials .icon {
+  margin-right: 13px;
+  display: flex;
+  display: -ms-flexbox;
+  width: 80px;
+  height: 80px;
+  background: #e1e1e1;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+.footer__socials .icon img {
+  width: 21px !important;
+  height: 21px !important;
+}
+.footer__socials .icon:nth-child(3) {
+  margin-right: 140px;
+}
+.footer__content {
+  flex-direction: column;
+  justify-content: center;
+}
+.footer__content .content__title {
+  margin-bottom: 12px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
