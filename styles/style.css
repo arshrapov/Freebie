@@ -28,11 +28,56 @@ body {
 }
 
 .row {
+  padding: 140px 0 110px;
   display: flex;
   display: -ms-flexbox;
 }
 .row_col {
+  flex-direction: column;
   width: 50%;
+}
+.row_col_f {
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+.row__title {
+  margin: 0 0 38px 0;
+  font-weight: bold;
+  font-size: 36px;
+  color: #000;
+}
+.row__text {
+  margin: 0 0 18px 0;
+  font-size: 14px;
+  color: #000;
+}
+.row__link {
+  font-size: 14px;
+  color: #ED4C5C;
+}
+.row__inner {
+  padding: 0 2%;
+}
+.row__inner .inner__content {
+  padding: 33px 32px 25px;
+  border-radius: 8px;
+  text-align: center;
+  background: #fff;
+}
+.row__inner .inner__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.row__inner .inner__text {
+  margin: 20px 0 7px 0;
+  font-size: 14px;
+}
+.row__inner .inner__link {
+  font-size: 13px;
+  color: #ED4C5C;
 }
 
 .cta {
@@ -53,19 +98,31 @@ body {
 
 /*=========Header==============*/
 .mainscreen {
+  padding: 59px 0 187px;
   position: relative;
   background: url("../images/header/bg.png");
   background-size: cover;
 }
 .mainscreen .offer {
+  margin: 0 auto;
+  max-width: 568px;
+  margin-top: 167px;
   display: flex;
   display: -ms-flexbox;
-  justify-content: center;
+  text-align: center;
+  align-items: center;
   flex-direction: column;
   color: #fff;
+  width: 100%;
 }
 .mainscreen .offer__title {
   font-size: 72px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.mainscreen .offer__text {
+  margin: 39px 0;
+  font-size: 24px;
   font-weight: bold;
 }
 .mainscreen .offer .cta {
@@ -78,9 +135,18 @@ body {
   display: -ms-flexbox;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   color: #fff;
 }
-.header__logo:before {
+.header__logo {
+  height: 18px;
+  display: flex;
+  display: -ms-flexbox;
+  justify-content: center;
+  align-items: flex-end;
+}
+.header__logo:after {
+  margin: 0 0 0 4px;
   content: "cloudbudget";
   font-weight: bold;
   font-size: 15px;
@@ -98,6 +164,57 @@ body {
 }
 
 /*=========Main styles=========*/
+/*VIDEO SECTION*/
+.video .row_col:nth-child(1) {
+  margin-top: 50px;
+}
+.video .row__img {
+  margin: 0 auto;
+  height: 100%;
+  width: auto;
+  background: url(../images/sections/bg.png) no-repeat;
+  background-position: center;
+}
+
+/*FEATURES SECTION*/
+.features .row {
+  align-items: center;
+  flex-direction: column;
+}
+.features .row__inner {
+  height: 250px;
+}
+.features .row__inner .inner__content {
+  margin: 155px 0 0 0;
+}
+.features .row__inner:nth-child(1) {
+  background: url("../images/sections/1.png") no-repeat;
+}
+.features .row__inner:nth-child(2) {
+  margin: 0 30px;
+  background: url("../images/sections/2.png") no-repeat;
+}
+.features .row__inner:nth-child(3) {
+  background: url("../images/sections/3.png") no-repeat;
+}
+
+/*TECHNOLOGY SECTION*/
+.technology .row {
+  text-align: center;
+  flex-direction: column;
+}
+.technology .row__inner {
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: column;
+  align-items: center;
+  width: 24%;
+  text-align: center;
+}
+.technology .row__inner .inner__icon {
+  height: 80px;
+}
+
 /*=========Footer==============*/
 .footer {
   padding: 68px 0 66px;
