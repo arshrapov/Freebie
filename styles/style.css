@@ -44,7 +44,7 @@ body {
   width: 100%;
 }
 .row__title {
-  margin: 0 0 38px 0;
+  margin: 0 0 54px 0;
   font-weight: bold;
   font-size: 36px;
   color: #000;
@@ -177,6 +177,9 @@ body {
 }
 
 /*FEATURES SECTION*/
+.features {
+  background: #FAFAFA;
+}
 .features .row {
   align-items: center;
   flex-direction: column;
@@ -213,6 +216,65 @@ body {
 }
 .technology .row__inner .inner__icon {
   height: 80px;
+}
+
+/*DOWNLOAD SECTION*/
+.download {
+  background: #ED4C5C;
+}
+.download .row {
+  padding: 94px 0 95px;
+}
+.download .row__title, .download .row__text {
+  color: #fff;
+}
+.download .row__title {
+  margin-top: 15px;
+}
+.download .row__text {
+  max-width: 445px;
+  margin: 0 0 40px 0;
+}
+.download .row__icons {
+  margin-bottom: 13px;
+  display: flex;
+  flex-direction: row;
+}
+.download .row__icon {
+  margin: 0 26px 0 0;
+}
+.download .row__icon:last-child {
+  margin: 0;
+}
+.download .row .row_col:nth-child(2) {
+  position: relative;
+}
+.download .row__img {
+  position: absolute;
+  width: 383px;
+  height: 267px;
+  background-size: cover;
+}
+.download .row .img_1 {
+  background: url("../images/video/1.png") no-repeat;
+}
+.download .row .img_2 {
+  background: url("../images/video/2.png") no-repeat;
+}
+.download .row .img_3 {
+  background: url("../images/video/3.png") no-repeat;
+}
+.download .row .img_selected {
+  width: 445px;
+  height: 311px;
+  background-size: contain;
+  transform: translateX(8%);
+}
+.download .row .no_sel_1 {
+  transform: translateY(10%);
+}
+.download .row .no_sel_2 {
+  transform: translateX(35%) translateY(10%);
 }
 
 /*=========Footer==============*/
