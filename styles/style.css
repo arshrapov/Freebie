@@ -13,7 +13,7 @@ a {
   color: none;
 }
 
-input {
+input, select {
   border: none;
   outline: none;
 }
@@ -94,6 +94,12 @@ body {
 .cta__white {
   background: #fff;
   color: #ED4C5C;
+}
+.cta_red {
+  background: #ED4C5C;
+  color: #fff;
+  border-radius: 0;
+  text-transform: uppercase;
 }
 
 /*=========Header==============*/
@@ -277,43 +283,72 @@ body {
   transform: translateX(35%) translateY(10%);
 }
 
+.contact .row__text {
+  max-width: 80%;
+  line-height: 140%;
+}
+.contact label input, .contact label select {
+  padding: 14px 0 14px 20px;
+  background: none;
+  font-size: 16px;
+  color: rgba(19, 39, 76, 0.5);
+  border: 1px solid #333;
+  border-radius: 6px;
+  text-transform: capitalize;
+}
+.contact label input[type=f_name], .contact label input[type=l_name] {
+  width: 46%;
+}
+.contact label input[type=l_name] {
+  float: right;
+}
+.contact label input[type=number] {
+  width: 100%;
+  margin: 24px 0;
+}
+.contact label select {
+  width: 100%;
+  margin-bottom: 24px;
+}
+.contact label .cta {
+  width: 160px;
+  height: 60px;
+}
+
 /*=========Footer==============*/
 .footer {
-  padding: 68px 0 66px;
+  padding: 85px 0 86px;
 }
-.footer .container {
+.footer .copyring {
+  margin: 86px 0 0 0;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 14px;
+}
+.footer .row {
+  padding: 0;
+  justify-content: space-between;
+}
+.footer__title {
+  margin: 0 0 28px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #101010;
+}
+.footer__text {
+  font-size: 12px;
+  text-transform: capitalize;
+  line-height: 160%;
+}
+.footer__icon {
+  margin-right: 3px;
+}
+.footer__icon:last-child {
+  margin: 0;
+}
+.footer ul {
+  flex: 0 0 23%;
   display: flex;
   display: -ms-flexbox;
-}
-.footer_col {
-  display: flex;
-  display: -ms-flexbox;
-}
-.footer__socials .icon {
-  margin-right: 13px;
-  display: flex;
-  display: -ms-flexbox;
-  width: 80px;
-  height: 80px;
-  background: #e1e1e1;
-  border-radius: 50%;
-  align-items: center;
-  justify-content: center;
-}
-.footer__socials .icon img {
-  width: 21px !important;
-  height: 21px !important;
-}
-.footer__socials .icon:nth-child(3) {
-  margin-right: 140px;
-}
-.footer__content {
   flex-direction: column;
-  justify-content: center;
-}
-.footer__content .content__title {
-  margin-bottom: 12px;
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 700;
 }

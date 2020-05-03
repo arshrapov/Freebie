@@ -2,9 +2,15 @@
   @include flexBox;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
   color: #fff;
   &__logo {
-    &:before {
+    height: 18px;
+    @include flexBox;
+    justify-content: center;
+    align-items: flex-end;
+    &:after {
+      margin: 0 0 0 4px;
       content: "cloudbudget";
       font-weight: bold;
       font-size: 15px;
