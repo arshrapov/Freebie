@@ -35,4 +35,19 @@
     width: 100px;
     height: 40px;
   }
+
+
+  @media (max-width: 1066px) {
+    .header__link {
+      font-size: 11px;
+    }
+  }
+  @media (max-width: 900px) {
+    nav {
+      display: none;
+    }
+    .header__bar {
+      display: block;
+    }
+  }
 }
