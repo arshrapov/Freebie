@@ -43,6 +43,11 @@ body {
   &__link {
     font-size: 14px;
     color: #ED4C5C;
+    transition: all .3s linear;
+    &:hover {
+      cursor: pointer;
+      border-bottom: 1px solid #ED4C5C;
+    }
   }
   &__img {
   }
@@ -65,6 +70,11 @@ body {
     .inner__link {
         font-size: 13px;
         color: #ED4C5C;
+        transition: all .3s linear;
+        &:hover {
+          cursor: pointer;
+          border-bottom: 1px solid #ED4C5C;
+        }
     }
   }
 }
@@ -73,10 +83,20 @@ body {
    @include flexBox;
    justify-content: center;
    align-items:center;
-   border-radius: 6px;
+   box-shadow: 5px 3px 17px rgba(0,0,0,0.5);
+   transition: all .4s ease-in;
+   &:hover {
+     cursor: pointer;
+     box-shadow: none;
+   }
    &__white_border {
      border: 1px solid #fff;
      color: #fff;
+     box-shadow: none;
+     &:hover {
+        background: #fff;
+        color: #ED4C5C;
+     }
    }
    &__white {
      background: #fff;
@@ -285,6 +305,7 @@ body {
     .cta {
       width: 160px;
       height: 60px;
+
     }
   }
 }

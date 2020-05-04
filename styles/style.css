@@ -57,6 +57,11 @@ body {
 .row__link {
   font-size: 14px;
   color: #ED4C5C;
+  transition: all 0.3s linear;
+}
+.row__link:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #ED4C5C;
 }
 .row__inner {
   padding: 0 2%;
@@ -78,6 +83,11 @@ body {
 .row__inner .inner__link {
   font-size: 13px;
   color: #ED4C5C;
+  transition: all 0.3s linear;
+}
+.row__inner .inner__link:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #ED4C5C;
 }
 
 .cta {
@@ -85,11 +95,21 @@ body {
   display: -ms-flexbox;
   justify-content: center;
   align-items: center;
-  border-radius: 6px;
+  box-shadow: 5px 3px 17px rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in;
+}
+.cta:hover {
+  cursor: pointer;
+  box-shadow: none;
 }
 .cta__white_border {
   border: 1px solid #fff;
   color: #fff;
+  box-shadow: none;
+}
+.cta__white_border:hover {
+  background: #fff;
+  color: #ED4C5C;
 }
 .cta__white {
   background: #fff;
@@ -160,6 +180,11 @@ body {
 }
 .header__link {
   margin-right: 35px;
+  transition: font-weight 0.3s linear;
+}
+.header__link:hover {
+  font-weight: bold;
+  cursor: pointer;
 }
 .header__link:last-child {
   margin: 0;
